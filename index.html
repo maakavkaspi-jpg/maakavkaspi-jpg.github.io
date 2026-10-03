@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מעקב כספי</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;600;700&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F6F2E9;
+    --forest: #1F3D2B;
+    --forest-soft: #2E4F39;
+    --gold: #A47C2B;
+    --ink: #24312A;
+    --muted: #5B6B5E;
+    --line: #DED6C4;
+    --card: #FFFFFF;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Assistant', sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 72px 24px 56px;
+  }
+
+  .mark {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    font-size: clamp(32px, 6vw, 44px);
+    line-height: 1.25;
+    margin: 0 0 18px;
+    color: var(--forest);
+  }
+
+  .lede {
+    font-size: 19px;
+    color: var(--muted);
+    margin: 0 0 40px;
+    max-width: 46ch;
+  }
+
+  .links {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 32px;
+    margin: 0 0 56px;
+  }
+
+  .links p {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  .nav-link {
+    display: block;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--forest);
+    text-decoration: none;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 3px;
+    margin-bottom: 22px;
+    width: fit-content;
+  }
+
+  .nav-link:last-of-type { margin-bottom: 0; }
+
+  .nav-link:hover,
+  .nav-link:focus-visible { color: var(--forest-soft); }
+
+  .nav-link:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
+  }
+
+  footer {
+    font-size: 13px;
+    color: var(--muted);
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  footer p { margin: 0; }
+</style>
+</head>
+<body>
+<main>
+
+  <svg class="mark" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="סמל מעקב כספי">
+    <circle cx="28" cy="28" r="26" fill="#1F3D2B"/>
+    <path d="M28 6a22 22 0 0 1 0 44V6z" fill="#2E4F39"/>
+    <circle cx="28" cy="28" r="26" fill="none" stroke="#A47C2B" stroke-width="1.5"/>
+  </svg>
+
+  <h1>מעקב כספי</h1>
+  <p class="lede">אפליקציה למעקב הכנסות והוצאות לעובדי משמרות בישראל, עם חישוב שכר נטו לפי חוק וזיהוי אוטומטי של שבת וחג בכל משמרת.</p>
+
+  <div class="links">
+    <p>מידע נוסף:</p>
+    <a class="nav-link" href="https://maakavkaspi-jpg.github.io/maakav-kaspi-support/">תמיכה ויצירת קשר</a>
+    <a class="nav-link" href="https://maakavkaspi-jpg.github.io/maakav-kaspi-support/privacy.html">מדיניות פרטיות</a>
+  </div>
+
+  <footer>
+    <p>צוות מעקב כספי</p>
+  </footer>
+
+</main>
+</body>
+</html>
